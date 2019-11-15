@@ -38,7 +38,7 @@ var plotOptions = {
     };
 
 var plot = $.plot($("#epicurves"), [], plotOptions);
-var plot2 = $.plot($("#epicurves2"), [], plotOptions);
+var plot2 = $.plot($("#epicurves"), [], plotOptions);
 
 
 var kArray = [];
