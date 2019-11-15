@@ -5,8 +5,8 @@ G =
 
 var valid_data = 1;
 var running = 0;
-var p_SI = 0.3;
-var p_IR = 0.08;
+var p_SI = 0.2;
+var p_IR = 0.18;
 var time_interval = 1000;
 var count = 0;
 var timeseries;
@@ -14,7 +14,7 @@ var timeseries;
 var nodeArray = G.nodes;
 var edgeArray = G.links;
 
-var sir_color = {S: "#0fffff", I: "#f0ff00", R: "#f000ff" }
+var sir_color = {S: "#0000ff", I: "#ff0000", R: "#00ff00" }
 
 var epi_state = { S: nodeArray.length, I: 0, R: 0 };
 
@@ -38,6 +38,7 @@ var plotOptions = {
     };
 
 var plot = $.plot($("#epicurves"), [], plotOptions);
+var plot2 = $.plot($("#epicurves2"), [], plotOptions);
 
 
 var kArray = [];
@@ -57,7 +58,7 @@ for (i in nodeArray) {
 }
 
 
-var w = "100%";
+var w = "50%";
 var h = 500;
 
 var vis = d3.select("#graph-layout")
@@ -186,6 +187,9 @@ function update_plot () {
  plot.setData([timeseries.I]);
  plot.setupGrid();
  plot.draw();
+	plot2.setData([timeseries.S]);
+ plot2.setupGrid();
+ plot2.draw();
 }
 
 
