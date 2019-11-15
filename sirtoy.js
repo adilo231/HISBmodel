@@ -16,7 +16,7 @@ var edgeArray = G.links;
 
 var sir_color = {S: "#0fffff", I: "#f0ff00", R: "#f000ff" }
 
-var epi_state = { S: nodeArray.length, I: 10, R: 0 };
+var epi_state = { S: nodeArray.length, I: 0, R: 0 };
 
 function reset_history () {
   timeseries = {S: {label: "S", color: sir_color.S, data: []},
@@ -31,8 +31,8 @@ function reset_history () {
 reset_history();
 
 var plotOptions = {
-     //   lines: { show: true },
-	 //	points: { show: true },
+        lines: { show: true },
+	 	points: { show: true },
         xaxis: {min: -1},
         series: { shadowSize: 0 }
     };
