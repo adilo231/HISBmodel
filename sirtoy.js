@@ -33,7 +33,7 @@ reset_history();
 var plotOptions = {
         lines: { show: true },
 	 	points: { show: true },
-        xaxis: {min: -1},
+        xaxis: {min: 0},
         series: { shadowSize: 0 }
     };
 
