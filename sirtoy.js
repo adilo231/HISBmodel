@@ -38,7 +38,7 @@ var plotOptions = {
     };
 
 var plot = $.plot($("#epicurves"), [], plotOptions);
-var plot2 = $.plot($("#epicurves"), [], plotOptions);
+
 
 
 var kArray = [];
@@ -187,9 +187,6 @@ function update_plot () {
  plot.setData([timeseries.I]);
  plot.setupGrid();
  plot.draw();
-	plot2.setData([timeseries.S]);
- plot2.setupGrid();
- plot2.draw();
 }
 
 
