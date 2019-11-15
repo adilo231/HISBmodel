@@ -60,8 +60,8 @@ for (i in nodeArray) {
 }
 
 
-var w = "50%";
-var h = 500;
+var w = "100%";
+var h = 650;
 
 var vis = d3.select("#graph-layout")
     .append("svg:svg")
