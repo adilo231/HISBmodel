@@ -33,17 +33,17 @@ div#controls {
 }
 
 span#susceptible {
-	color: #0ff;
+	color: #f00;
     font-size: 14px;
 }
 
 span#infectious {
-	color: #ff0;
+	color: #0f0;
     font-size: 14px;
 }
 
 span#recovered {
-	color: #f0f;
+	color: #00f;
     font-size: 14px;
 }
 
@@ -57,7 +57,7 @@ div#graph-layout {
    margin: 20px;
    background: #fafafa;
    border-style: solid;
-   border-width: 1px;
+   border-width: 2px;
    border-color: #eee;
    clear: both;
    position: relative;
@@ -70,6 +70,7 @@ div#epicurves {
    margin: 20px;
    float: left;
 }
+
 
 
 circle.node {
