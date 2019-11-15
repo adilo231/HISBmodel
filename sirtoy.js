@@ -38,6 +38,8 @@ var plotOptions = {
     };
 
 var plot = $.plot($("#epicurves"), [], plotOptions);
+var plot1 = $.plot2($("#epicurves1"), [], plotOptions);
+var plot2 = $.plot1($("#epicurves2"), [], plotOptions);
 
 var kArray = [];
 
@@ -182,9 +184,15 @@ function update_graph () {
 }
 
 function update_plot () {
- plot.setData([timeseries.S, timeseries.I, timeseries.R]);
+ plot.setData([timeseries.I]);
  plot.setupGrid();
  plot.draw();
+ plot1.setData([timeseries.S]);
+ plot1.setupGrid();
+ plot1.draw();
+	 plot2.setData([timeseries.S]);
+ plot2.setupGrid();
+ plot3.draw();
 }
 
 
