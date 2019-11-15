@@ -190,7 +190,7 @@ function update_plot () {
  plot.setupGrid();
  plot.draw();
 	
-	plot2.setData([timeseries.I]);
+	plot2.setData([timeseries.S]);
  plot2.setupGrid();
  plot2.draw();
  
